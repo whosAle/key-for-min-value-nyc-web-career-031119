@@ -8,6 +8,6 @@ def key_for_min_value(name_hash)
       lowest = v
     end
   end #{ |k, v| puts lowest }#v < lowest ? lowest = v : lowest}
-  # puts lowest
+  puts lowest
   name_hash.invert[lowest]
 end
