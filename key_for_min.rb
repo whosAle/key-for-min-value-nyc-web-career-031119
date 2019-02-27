@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   lowest = 0
-  name_hash.each { |k, v| puts v }#v < lowest ? lowest = v : lowest}
-  puts lowest
+  name_hash.each { |k, v| puts lowest }#v < lowest ? lowest = v : lowest}
+  # puts lowest
   name_hash.invert[lowest]
 end
