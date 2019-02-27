@@ -5,9 +5,10 @@ def key_for_min_value(name_hash)
   if name_hash.length == 0
     nil
   else
-    lowest = name_hash[0]
-    name_hash.each { |k, v| lowest = v if v < lowest }
+    lowest = 0
+    name_hash.each { |k, v| lowest += v }
     puts lowest
+    name_hash.each { |k, v| lowest = v if v < lowest }
     name_hash.invert[lowest]
   end
 end
